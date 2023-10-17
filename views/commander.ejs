@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/commander.css">
+    <title>Commander</title>
+</head>
+<body>
+<section class="inscri" >
+    <h2>Saisissez vos données avec précision !</h2>
+    <form action="/all-command" method="POST">
+        <table>
+            <tr>
+                <td>Nom:</td>
+                <td><input type="text" name="nom" required></td>
+            </tr>
+            <tr>
+                <td>Prénom:</td>
+                <td><input type="text" name="prenom" required></td>
+            </tr>
+            <tr>
+                <td>Téléphone:</td>
+                <td><input type="text" name="telephone" required></td>
+            </tr>
+            <tr>
+                <td>Adresse:</td>
+                <td><input type="text" name="adresse" required></td>
+            </tr>
+            <tr>
+                <td>Référence du produit:</td>
+                <td><input type="text" name="ref" required></td>
+            </tr>
+            <tr>
+                <td>Quantité:</td>
+                <td><input type="number" name="quant" required></td>
+            </tr>
+            
+        </table>
+        <input type="submit" value="Commander">
+    </form>
+</section>
+</body>

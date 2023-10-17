@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/connection.css">
+    <title>connection admin</title>
+</head>
+<body>
+    <section class="connectEn">
+        <h2>Connection</h2>
+        <div class="error-message" id="error-message">
+            <%= errorMessage %>
+            <span class="close-button" onclick="closeErrorMessage()">&times;</span>
+        </div>        
+        <form action="/connectad" method="post" >
+            <table>
+                <tr>
+                    <td>Email :</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>Mot de passe :</td>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+            </table>
+            <input type="submit" value="se connecter">
+        </form>
+        <script>// JavaScript to close the error message
+            function closeErrorMessage() {
+                const errorMessageElement = document.getElementById('error-message');
+                errorMessageElement.style.display = 'none';
+            }
+            </script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/1bi.css">
+    <title>liste</title>
+</head>
+<body>
+    <section>
+        <h1>liste des commandes :</h1>
+        <table id="commandTable">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>First Name</th>
+                    <th>Telephone</th>
+                    <th>Address</th>
+                    <th>Reference</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% if (commands && commands.length > 0) { %>
+                    <% commands.forEach((command, index) => { %>
+                        <tr>
+                            <td><%= index + 1 %></td>
+                            <td><%= command.nom %></td>
+                            <td><%= command.prenom %></td>
+                            <td><%= command.telephone %></td>
+                            <td><%= command.adresse %></td>
+                            <td><%= command.ref %></td>
+                            <td><%= command.quant %></td>
+                        </tr>
+                    <% }) %>
+                <% } else { %>
+                    <tr>
+                        <td colspan="7">No commands found.</td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+        <form method="POST" action="/supprimercommands">
+            <input type="submit" value="supprimer les commandes !">
+        </form>
+
+    </section>  
+    
+</body>
+</html>

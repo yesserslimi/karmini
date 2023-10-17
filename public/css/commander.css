@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 50px 250px;
+}
+.inscri {
+    background: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm222batch5-kul-36_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=4ce6584b26089e990be89650d5d1cad8);
+    background-size: cover;
+    background-position: center;
+}
+h2 {
+    color: #0d7002;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 700;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+td {
+    color: #000000;
+	text-align: left;
+	padding: 4px;
+
+}
+tr {
+    transition: 0.7s;
+}
+tr:hover {
+	background-color: #7cff6b;
+    transform: scale(1.1);
+}
+input[type=text], input[type=email],input[type=number],input[type=date], input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+input[type=submit] {
+	background-color: #0d7002;
+	color: #fff;
+
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+    transition: 0.7s ease;
+    position: relative;
+    top: 40px; 
+    left: 350px;
+}  
+input[type=submit]:hover {
+    background-color: #085200;
+    transform: scale(1.1);
+
+}
+/* Style for the success message */
+.success-message {
+    display: none; /* Initially hidden */
+    background-color: #4CAF50; /* Green background color */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px; /* Padding around the message */
+    border-radius: 4px; /* Rounded corners */
+    margin-top: 10px; /* Space above the message */
+}
