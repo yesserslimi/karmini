@@ -82,3 +82,12 @@ input[type=submit]:hover {
     border-radius: 4px; /* Rounded corners */
     margin-top: 10px; /* Space above the message */
 }
+@media screen and (max-width: 767px) {
+    .inscri {
+        width: 200%;
+        height:1000px;
+    }
+    input[type=submit] {
+        margin-left: -275px;
+    }  
+}
