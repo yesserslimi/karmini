@@ -59,7 +59,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url("https://wallpapers.net/green-leaves-hd-wallpaper/download/5120x2160.jpg") no-repeat;
+    background: url("../images/mainimg.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
