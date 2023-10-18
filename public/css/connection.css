@@ -89,3 +89,12 @@ input[type=submit]:hover {
     padding: 5px;
   }
   
+ @media screen and (max-width: 767px) {
+    .connectEn {
+        width: 200%;
+        height: 1000px;
+    }
+    input[type=submit] {
+        margin-left: -275px;
+    }  
+}
