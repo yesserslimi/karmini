@@ -257,7 +257,33 @@ footer {
   .product img {
    width: 200px;
   }
-
+@media screen and (max-width: 767px) {
+    .main{
+        width: 200%;
+    }
+    .cards, .admin{
+        margin-left: 45%;
+    }
+    
+    .histo{
+        margin-left: 45%;
+    }
+    .histo .title{
+        margin-left: 45%;
+    }
+    .contact img{
+        width: 400px;
+        display: block;
+        margin-left: -200px;
+    }
+    .product-grid {
+        margin-right: auto;
+    }
+    
+    footer {
+        width: 200%;
+    }
+}
   
  
 
