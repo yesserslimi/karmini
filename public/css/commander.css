@@ -6,6 +6,10 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+body {
+  overflow: hidden;
+}
+
 
 section{
     padding: 50px 250px;
