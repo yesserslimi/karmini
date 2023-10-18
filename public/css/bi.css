@@ -6,6 +6,10 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+body {
+  overflow: hidden;
+}
+
 .title {
     display: flex;
     justify-content: center;
