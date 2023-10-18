@@ -49,6 +49,9 @@ img {
 .navigation a:hover{
     color: #0d7002;
 }
+body {
+  overflow: hidden;
+}
 
 section{
     padding: 100px 200px;
@@ -282,7 +285,7 @@ footer {
     footer {
         width: 200%;
     }
-}
+} 
  
 
 
